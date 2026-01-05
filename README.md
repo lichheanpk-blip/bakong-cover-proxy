@@ -110,7 +110,7 @@ If this gateway is useful in your workflow, feel free to support future maintena
 
 | KHQR (KHR) | KHQR (USD) |
 | --- | --- |
-| ![KHQR KHR payment code](https://storage.perfectcdn.com/axz9n1/g3ccceb3ng7o9431.jpg) | ![KHQR USD payment code](https://storage.perfectcdn.com/axz9n1/phmp0ofcq4eu4gdh.jpg) |
+| ![KHQR KHR payment code](https://storage.perfectcdn.com/axz9n1/phmp0ofcq4eu4gdh.jpg) | ![KHQR USD payment code](https://storage.perfectcdn.com/axz9n1/g3ccceb3ng7o9431.jpg) |
 
 ## Additional resources
 - [Slim Framework Documentation](https://www.slimframework.com/docs/v4/)
