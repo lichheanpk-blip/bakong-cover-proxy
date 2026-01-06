@@ -53,7 +53,7 @@ $app->get('/', function (Request $request, Response $response) {
 // ================= CRON RENEW TOKEN =================
 $app->get('/bakong/renew/cron', function (Request $request, Response $response) use ($BAKONG_BASE_URL, $TOKEN_FILE, $ENABLE_LOGS) {
     $params = $request->getQueryParams();
-    $cronKey = 'b460c5c497f5abf57ba5e245f6edbd0ce1f4c85380f69af4774a67cb6f672b13'; // HARDCODED KEY
+    $cronKey = ''; // HARDCODED KEY
 
     if (!isset($params['key']) || $params['key'] !== $cronKey) {
         $response->getBody()->write(json_encode([
@@ -64,7 +64,7 @@ $app->get('/bakong/renew/cron', function (Request $request, Response $response) 
     }
 
     // Renewal Logic
-    $email = 'lichheanpk@gmail.com'; // Hardcoded email per request
+    $email = 'user@gmail.com'; // Hardcoded email per request
     $payload = json_encode(['email' => $email]);
 
     $ch = curl_init($BAKONG_BASE_URL . '/v1/renew_token');
@@ -236,3 +236,4 @@ $app->map(['GET','POST','PUT','PATCH','DELETE'], '/{path:.*}', function (
 });
 
 $app->run();
+
