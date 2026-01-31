@@ -3,7 +3,7 @@
 date_default_timezone_set('Asia/Phnom_Penh');
 $ENABLE_LOGS     = false; // Set to false to disable logs
 $BAKONG_BASE_URL = 'https://api-bakong.nbc.gov.kh';
-$EMAIL = 'lichheanpk@gmail.com';
+$EMAIL = 'urgmail@gmail.com';
 
 $TOKEN_FILE = __DIR__ . '/storage/token.json';
 $LOG_FILE   = __DIR__ . '/logs/renew-token.log';
@@ -74,3 +74,4 @@ file_put_contents($TOKEN_FILE, json_encode([
 
 logMsg('✅ Token renewed successfully');
 echo "✅ Token renewed successfully\n";
+
